@@ -1,0 +1,23 @@
+{
+  "users": {
+    "user_demo": {
+      "id": "user_demo",
+      "username": "demo_user",
+      "name": "Demo User",
+      "email": "demo@quickbet.app",
+      "favoriteTeams": ["team_manutd", "team_lakers"],
+      "favoriteSports": ["football", "basketball"],
+      "preferences": {
+        "oddsFormat": "decimal",
+        "defaultBetAmount": 10,
+        "notifications": true
+      },
+      "stats": {
+        "totalBets": 0,
+        "wins": 0,
+        "totalWagered": 0,
+        "totalWon": 0
+      }
+    }
+  }
+}

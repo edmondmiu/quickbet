@@ -1,0 +1,76 @@
+{
+  "matches": [
+    {
+      "id": "match_001",
+      "sport": "football",
+      "league": "Premier League",
+      "homeTeam": {
+        "id": "team_manutd",
+        "name": "Manchester United",
+        "shortName": "MUN",
+        "logo": "/logos/manutd.png",
+        "score": 2
+      },
+      "awayTeam": {
+        "id": "team_chelsea",
+        "name": "Chelsea",
+        "shortName": "CHE",
+        "logo": "/logos/chelsea.png",
+        "score": 1
+      },
+      "status": "live",
+      "minute": 73,
+      "period": "second_half",
+      "startTime": "2025-06-02T15:00:00Z",
+      "venue": "Old Trafford"
+    },
+    {
+      "id": "match_002",
+      "sport": "football",
+      "league": "La Liga",
+      "homeTeam": {
+        "id": "team_barcelona",
+        "name": "FC Barcelona",
+        "shortName": "BAR",
+        "logo": "/logos/barcelona.png",
+        "score": 0
+      },
+      "awayTeam": {
+        "id": "team_realmadrid",
+        "name": "Real Madrid",
+        "shortName": "RMA",
+        "logo": "/logos/realmadrid.png",
+        "score": 0
+      },
+      "status": "live",
+      "minute": 12,
+      "period": "first_half",
+      "startTime": "2025-06-02T19:00:00Z",
+      "venue": "Camp Nou"
+    },
+    {
+      "id": "match_003",
+      "sport": "basketball",
+      "league": "NBA",
+      "homeTeam": {
+        "id": "team_lakers",
+        "name": "LA Lakers",
+        "shortName": "LAL",
+        "logo": "/logos/lakers.png",
+        "score": 87
+      },
+      "awayTeam": {
+        "id": "team_warriors",
+        "name": "Golden State Warriors",
+        "shortName": "GSW",
+        "logo": "/logos/warriors.png",
+        "score": 91
+      },
+      "status": "live",
+      "minute": 8,
+      "period": "Q3",
+      "startTime": "2025-06-02T02:30:00Z",
+      "venue": "Crypto.com Arena"
+    }
+  ]
+}

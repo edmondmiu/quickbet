@@ -1,0 +1,102 @@
+{
+  "football": {
+    "goals_timeframe": {
+      "id": "goals_timeframe",
+      "template": "Goals in next {minutes} minutes?",
+      "type": "multiple_choice",
+      "options": [
+        { "value": 0, "label": "0", "baseOdds": 2.5 },
+        { "value": 1, "label": "1", "baseOdds": 1.8 },
+        { "value": 2, "label": "2+", "baseOdds": 3.2 }
+      ],
+      "applicableWhen": {
+        "status": "live",
+        "minutesRemaining": ">10"
+      },
+      "parameters": {
+        "minutes": [5, 10, 15]
+      }
+    },
+    "next_scorer": {
+      "id": "next_scorer",
+      "template": "Next team to score?",
+      "type": "multiple_choice",
+      "options": [
+        { "value": "home", "label": "{homeTeam}", "baseOdds": 1.9 },
+        { "value": "away", "label": "{awayTeam}", "baseOdds": 1.9 },
+        { "value": "none", "label": "No goals", "baseOdds": 3.5 }
+      ],
+      "applicableWhen": {
+        "status": "live"
+      }
+    },
+    "halftime_score": {
+      "id": "halftime_score",
+      "template": "Score at halftime?",
+      "type": "multiple_choice",
+      "options": [
+        { "value": "current", "label": "Stay same", "baseOdds": 2.2 },
+        { "value": "home+1", "label": "{homeTeam} scores", "baseOdds": 2.8 },
+        { "value": "away+1", "label": "{awayTeam} scores", "baseOdds": 2.8 },
+        { "value": "both", "label": "Both score", "baseOdds": 4.5 }
+      ],
+      "applicableWhen": {
+        "period": "first_half",
+        "minute": "<40"
+      }
+    },
+    "corners_total": {
+      "id": "corners_total",
+      "template": "Total corners in {period}?",
+      "type": "over_under",
+      "baseValue": 5.5,
+      "options": [
+        { "value": "over", "label": "Over {baseValue}", "baseOdds": 1.85 },
+        { "value": "under", "label": "Under {baseValue}", "baseOdds": 1.95 }
+      ],
+      "applicableWhen": {
+        "status": "live"
+      }
+    }
+  },
+  "basketball": {
+    "points_quarter": {
+      "id": "points_quarter",
+      "template": "Total points in {period}?",
+      "type": "over_under",
+      "baseValue": 52.5,
+      "options": [
+        { "value": "over", "label": "Over {baseValue}", "baseOdds": 1.9 },
+        { "value": "under", "label": "Under {baseValue}", "baseOdds": 1.9 }
+      ],
+      "applicableWhen": {
+        "status": "live"
+      }
+    },
+    "next_10_points": {
+      "id": "next_10_points",
+      "template": "First to score 10 points?",
+      "type": "multiple_choice",
+      "options": [
+        { "value": "home", "label": "{homeTeam}", "baseOdds": 1.85 },
+        { "value": "away", "label": "{awayTeam}", "baseOdds": 1.85 }
+      ],
+      "applicableWhen": {
+        "status": "live"
+      }
+    },
+    "three_pointers": {
+      "id": "three_pointers",
+      "template": "3-pointers in next 5 minutes?",
+      "type": "multiple_choice",
+      "options": [
+        { "value": 0, "label": "0-1", "baseOdds": 3.2 },
+        { "value": 2, "label": "2-3", "baseOdds": 2.1 },
+        { "value": 4, "label": "4+", "baseOdds": 2.8 }
+      ],
+      "applicableWhen": {
+        "status": "live"
+      }
+    }
+  }
+}
