@@ -3,7 +3,7 @@ import { Match, Question, User } from '../types';
 
 export async function loadMatches(): Promise<Match[]> {
   try {
-    const response = await fetch('/data/matches.json');
+    const response = await fetch(`${import.meta.env.BASE_URL}data/matches.json`);
     const data = await response.json();
     return data.matches;
   } catch (error) {
@@ -14,7 +14,7 @@ export async function loadMatches(): Promise<Match[]> {
 
 export async function loadQuestions(matchId: string): Promise<Question[]> {
   try {
-    const response = await fetch('/data/questions.json');
+    const response = await fetch(`${import.meta.env.BASE_URL}data/questions.json`);
     const data = await response.json();
     
     // Map specific questions to specific matches
@@ -47,7 +47,7 @@ export async function loadQuestions(matchId: string): Promise<Question[]> {
 
 export async function loadUser(userId: string): Promise<User | null> {
   try {
-    const response = await fetch('/data/users.json');
+    const response = await fetch(`${import.meta.env.BASE_URL}data/users.json`);
     const data = await response.json();
     return data.users.find((u: User) => u.id === userId) || null;
   } catch (error) {

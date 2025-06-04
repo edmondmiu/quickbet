@@ -1,0 +1,59 @@
+// src/components/question/QuestionPanel.tsx
+import { useState, useEffect } from 'react';
+import { Match, Question } from '../../types';
+import { loadQuestions } from '../../utils/dataLoader';
+import QuestionCard from './QuestionCard';
+
+interface QuestionPanelProps {
+  match: Match;
+  onBack: () => void;
+}
+
+export default function QuestionPanel({ match, onBack }: QuestionPanelProps) {
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [selectedQuestion, setSelectedQuestion] = useState<Question | null>(null);
+
+  useEffect(() => {
+    loadQuestions(match.id).then(setQuestions);
+  }, [match.id]);
+
+  return (
+    <div className="space-y-4">
+      {/* Header */}
+      <div className="flex items-center justify-between mb-6">
+        <button
+          onClick={onBack}
+          className="text-white hover:text-green-400 transition-colors"
+        >
+          ← Back to matches
+        </button>
+        <div className="text-center">
+          <p className="text-gray-400 text-sm">{match.league}</p>
+          <p className="text-white font-medium">
+            {match.homeTeam.shortName} {match.homeTeam.score} - {match.awayTeam.score} {match.awayTeam.shortName}
+          </p>
+        </div>
+      </div>
+
+      {/* Questions */}
+      <div className="space-y-4">
+        <h2 className="text-2xl font-bold text-white mb-4">Choose a bet:</h2>
+        {questions.map((question) => (
+          <QuestionCard
+            key={question.id}
+            question={question}
+            isSelected={selectedQuestion?.id === question.id}
+            onSelect={() => setSelectedQuestion(question)}
+          />
+        ))}
+      </div>
+
+      {/* No questions fallback */}
+      {questions.length === 0 && (
+        <div className="text-center py-12">
+          <p className="text-gray-400">No betting questions available for this match right now.</p>
+        </div>
+      )}
+    </div>
+  );
+}

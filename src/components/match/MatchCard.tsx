@@ -1,5 +1,5 @@
 // src/components/match/MatchCard.tsx
-import { useState, useEffect, CSSProperties } from 'react';
+import { useState, CSSProperties } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { Match, Question } from '../../types';
 import clsx from 'clsx';
