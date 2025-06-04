@@ -3,8 +3,19 @@ import { Match, Question, User } from '../types';
 
 export async function loadMatches(): Promise<Match[]> {
   try {
-    const response = await fetch(`${import.meta.env.BASE_URL}data/matches.json`);
+    // Use relative path from the base URL
+    const url = './data/matches.json';
+    console.log('Loading matches from:', url);
+    console.log('Current location:', window.location.href);
+    
+    const response = await fetch(url);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
     const data = await response.json();
+    console.log('Loaded matches:', data.matches?.length || 0);
     return data.matches;
   } catch (error) {
     console.error('Error loading matches:', error);
@@ -14,7 +25,15 @@ export async function loadMatches(): Promise<Match[]> {
 
 export async function loadQuestions(matchId: string): Promise<Question[]> {
   try {
-    const response = await fetch(`${import.meta.env.BASE_URL}data/questions.json`);
+    const url = './data/questions.json';
+    console.log('Loading questions from:', url);
+    
+    const response = await fetch(url);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
     const data = await response.json();
     
     // Map specific questions to specific matches
@@ -47,7 +66,7 @@ export async function loadQuestions(matchId: string): Promise<Question[]> {
 
 export async function loadUser(userId: string): Promise<User | null> {
   try {
-    const response = await fetch(`${import.meta.env.BASE_URL}data/users.json`);
+    const response = await fetch('./data/users.json');
     const data = await response.json();
     return data.users.find((u: User) => u.id === userId) || null;
   } catch (error) {
