@@ -12,7 +12,9 @@
     "test:unit": "vitest run --dir tests/unit",
     "test:integration": "vitest run --dir tests/integration",
     "lint": "eslint src --ext ts,tsx",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -35,7 +37,8 @@
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
     "vitest": "^1.1.0",
-    "@types/node": "^20.10.5"
+    "@types/node": "^20.10.5",
+    "gh-pages": "^6.1.1"
   },
   "engines": {
     "node": ">=18.0.0"
