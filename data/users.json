@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "username": "quickbettor",
+      "balance": 1000,
+      "currency": "USD",
+      "level": 3,
+      "totalBets": 47,
+      "winRate": 0.62
+    }
+  ]
+}
