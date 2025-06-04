@@ -1,0 +1,196 @@
+{
+  "matches": [
+    {
+      "id": "match_001",
+      "sport": "football",
+      "league": "Premier League",
+      "homeTeam": {
+        "id": "team_manutd",
+        "name": "Manchester United",
+        "shortName": "MUN",
+        "logo": "/logos/manutd.png",
+        "score": 2
+      },
+      "awayTeam": {
+        "id": "team_chelsea",
+        "name": "Chelsea",
+        "shortName": "CHE",
+        "logo": "/logos/chelsea.png",
+        "score": 1
+      },
+      "status": "live",
+      "minute": 73,
+      "period": "second_half",
+      "startTime": "2025-06-02T15:00:00Z",
+      "venue": "Old Trafford"
+    },
+    {
+      "id": "match_002",
+      "sport": "football",
+      "league": "La Liga",
+      "homeTeam": {
+        "id": "team_barcelona",
+        "name": "FC Barcelona",
+        "shortName": "BAR",
+        "logo": "/logos/barcelona.png",
+        "score": 0
+      },
+      "awayTeam": {
+        "id": "team_realmadrid",
+        "name": "Real Madrid",
+        "shortName": "RMA",
+        "logo": "/logos/realmadrid.png",
+        "score": 0
+      },
+      "status": "live",
+      "minute": 12,
+      "period": "first_half",
+      "startTime": "2025-06-02T19:00:00Z",
+      "venue": "Camp Nou"
+    },
+    {
+      "id": "match_003",
+      "sport": "football",
+      "league": "Premier League",
+      "homeTeam": {
+        "id": "team_liverpool",
+        "name": "Liverpool",
+        "shortName": "LIV",
+        "logo": "/logos/liverpool.png",
+        "score": 0
+      },
+      "awayTeam": {
+        "id": "team_arsenal",
+        "name": "Arsenal",
+        "shortName": "ARS",
+        "logo": "/logos/arsenal.png",
+        "score": 0
+      },
+      "status": "upcoming",
+      "minute": 0,
+      "period": "pre_match",
+      "startTime": "2025-06-02T20:00:00Z",
+      "venue": "Anfield"
+    },
+    {
+      "id": "match_004",
+      "sport": "basketball",
+      "league": "NBA",
+      "homeTeam": {
+        "id": "team_lakers",
+        "name": "LA Lakers",
+        "shortName": "LAL",
+        "logo": "/logos/lakers.png",
+        "score": 87
+      },
+      "awayTeam": {
+        "id": "team_warriors",
+        "name": "Golden State Warriors",
+        "shortName": "GSW",
+        "logo": "/logos/warriors.png",
+        "score": 91
+      },
+      "status": "live",
+      "minute": 8,
+      "period": "Q3",
+      "startTime": "2025-06-02T02:30:00Z",
+      "venue": "Crypto.com Arena"
+    },
+    {
+      "id": "match_005",
+      "sport": "football",
+      "league": "Champions League",
+      "homeTeam": {
+        "id": "team_bayern",
+        "name": "Bayern Munich",
+        "shortName": "BAY",
+        "logo": "/logos/bayern.png",
+        "score": 0
+      },
+      "awayTeam": {
+        "id": "team_psg",
+        "name": "Paris Saint-Germain",
+        "shortName": "PSG",
+        "logo": "/logos/psg.png",
+        "score": 0
+      },
+      "status": "upcoming",
+      "minute": 0,
+      "period": "pre_match",
+      "startTime": "2025-06-02T20:45:00Z",
+      "venue": "Allianz Arena"
+    },
+    {
+      "id": "match_006",
+      "sport": "football",
+      "league": "Serie A",
+      "homeTeam": {
+        "id": "team_milan",
+        "name": "AC Milan",
+        "shortName": "MIL",
+        "logo": "/logos/milan.png",
+        "score": 1
+      },
+      "awayTeam": {
+        "id": "team_inter",
+        "name": "Inter Milan",
+        "shortName": "INT",
+        "logo": "/logos/inter.png",
+        "score": 1
+      },
+      "status": "live",
+      "minute": 45,
+      "period": "half_time",
+      "startTime": "2025-06-02T17:00:00Z",
+      "venue": "San Siro"
+    },
+    {
+      "id": "match_007",
+      "sport": "basketball",
+      "league": "NBA",
+      "homeTeam": {
+        "id": "team_celtics",
+        "name": "Boston Celtics",
+        "shortName": "BOS",
+        "logo": "/logos/celtics.png",
+        "score": 0
+      },
+      "awayTeam": {
+        "id": "team_heat",
+        "name": "Miami Heat",
+        "shortName": "MIA",
+        "logo": "/logos/heat.png",
+        "score": 0
+      },
+      "status": "upcoming",
+      "minute": 0,
+      "period": "pre_game",
+      "startTime": "2025-06-02T23:30:00Z",
+      "venue": "TD Garden"
+    },
+    {
+      "id": "match_008",
+      "sport": "football",
+      "league": "Bundesliga",
+      "homeTeam": {
+        "id": "team_dortmund",
+        "name": "Borussia Dortmund",
+        "shortName": "BVB",
+        "logo": "/logos/dortmund.png",
+        "score": 3
+      },
+      "awayTeam": {
+        "id": "team_leipzig",
+        "name": "RB Leipzig",
+        "shortName": "RBL",
+        "logo": "/logos/leipzig.png",
+        "score": 0
+      },
+      "status": "live",
+      "minute": 82,
+      "period": "second_half",
+      "startTime": "2025-06-02T14:30:00Z",
+      "venue": "Signal Iduna Park"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "id": "q_001",
+      "type": "correct_score",
+      "text": "Will Manchester United win this match 2-1?",
+      "category": "correct_score",
+      "expiresAt": "2025-06-02T16:30:00Z",
+      "options": [
+        {
+          "id": "opt_001_1",
+          "text": "Yes",
+          "odds": 8.50
+        },
+        {
+          "id": "opt_001_2",
+          "text": "No",
+          "odds": 1.08
+        }
+      ]
+    },
+    {
+      "id": "q_002",
+      "type": "over_under",
+      "text": "Will there be over 0.5 goals in the first half?",
+      "category": "ou_05",
+      "expiresAt": "2025-06-02T19:45:00Z",
+      "options": [
+        {
+          "id": "opt_002_1",
+          "text": "Yes",
+          "odds": 1.44
+        },
+        {
+          "id": "opt_002_2",
+          "text": "No",
+          "odds": 2.75
+        }
+      ]
+    },
+    {
+      "id": "q_003",
+      "type": "ht_1x2",
+      "text": "Will Liverpool be winning at half time?",
+      "category": "ht_1x2",
+      "expiresAt": "2025-06-02T20:45:00Z",
+      "options": [
+        {
+          "id": "opt_003_1",
+          "text": "Yes",
+          "odds": 2.30
+        },
+        {
+          "id": "opt_003_2",
+          "text": "No",
+          "odds": 1.61
+        }
+      ]
+    },
+    {
+      "id": "q_004",
+      "type": "corners",
+      "text": "Will there be over 8.5 corners in this game?",
+      "category": "corners_85",
+      "expiresAt": "2025-06-02T04:30:00Z",
+      "options": [
+        {
+          "id": "opt_004_1",
+          "text": "Yes",
+          "odds": 1.83
+        },
+        {
+          "id": "opt_004_2",
+          "text": "No",
+          "odds": 1.97
+        }
+      ]
+    },
+    {
+      "id": "q_005",
+      "type": "ht_handicap",
+      "text": "Will Bayern lead by 2+ goals at half time?",
+      "category": "ht_handicap",
+      "expiresAt": "2025-06-02T21:30:00Z",
+      "options": [
+        {
+          "id": "opt_005_1",
+          "text": "Yes",
+          "odds": 3.40
+        },
+        {
+          "id": "opt_005_2",
+          "text": "No",
+          "odds": 1.30
+        }
+      ]
+    },
+    {
+      "id": "q_006",
+      "type": "correct_score",
+      "text": "Will this match end in a 1-1 draw?",
+      "category": "correct_score",
+      "expiresAt": "2025-06-02T18:45:00Z",
+      "options": [
+        {
+          "id": "opt_006_1",
+          "text": "Yes",
+          "odds": 7.00
+        },
+        {
+          "id": "opt_006_2",
+          "text": "No",
+          "odds": 1.10
+        }
+      ]
+    },
+    {
+      "id": "q_007",
+      "type": "over_under",
+      "text": "Will there be over 0.5 goals in the first quarter?",
+      "category": "ou_05",
+      "expiresAt": "2025-06-02T23:45:00Z",
+      "options": [
+        {
+          "id": "opt_007_1",
+          "text": "Yes",
+          "odds": 1.65
+        },
+        {
+          "id": "opt_007_2",
+          "text": "No",
+          "odds": 2.20
+        }
+      ]
+    },
+    {
+      "id": "q_008",
+      "type": "ht_1x2",
+      "text": "Will Dortmund be winning at half time?",
+      "category": "ht_1x2",
+      "expiresAt": "2025-06-02T15:15:00Z",
+      "options": [
+        {
+          "id": "opt_008_1",
+          "text": "Yes",
+          "odds": 1.55
+        },
+        {
+          "id": "opt_008_2",
+          "text": "No",
+          "odds": 2.45
+        }
+      ]
+    }
+  ]
+}
